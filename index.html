@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yin Xupeng - 个人网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#hero">YX</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about">关于</a></li>
+                <li><a href="#work">作品</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-subtitle">你好，我是</p>
+                <h1 class="hero-title">王大锤</h1>
+                <p class="hero-description">
+                    产品设计师 & 前端开发者<br>
+                    专注于创造优雅的数字体验
+                </p>
+                <div class="hero-actions">
+                    <a href="#work" class="btn btn-primary">查看作品</a>
+                    <a href="#contact" class="btn btn-secondary">联系我</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-circle"></div>
+                <div class="hero-image">
+                    <img src="https://picsum.photos/300/300?random=1" alt="个人照片">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">关于我</span>
+                <h2 class="section-title">了解更多</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        我是一名充满热情的产品设计师和前端开发者，拥有多年的设计经验。我相信好的设计不仅仅是美观，更是解决问题的艺术。
+                    </p>
+                    <p>
+                        在过去的几年里，我参与了多个知名项目的设计工作，涵盖移动应用、网站和企业级产品。我善于将复杂的技术转化为直观的用户体验。
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-label">年设计经验</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">完成项目</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">合作客户</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="https://picsum.photos/600/400?random=2" alt="工作环境">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="work">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">精选作品</span>
+                <h2 class="section-title">我的项目</h2>
+            </div>
+            <div class="work-carousel">
+                <button class="carousel-btn carousel-btn-prev" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="work-card">
+                            <div class="work-image">
+                                <img src="https://picsum.photos/400/250?random=1" alt="项目1">
+                                <div class="work-overlay">
+                                    <h3>移动应用设计</h3>
+                                    <p>一款面向年轻人的社交应用</p>
+                                </div>
+                            </div>
+                            <div class="work-info">
+                                <h3>社交应用</h3>
+                                <p>UI/UX设计</p>
+                            </div>
+                        </div>
+                        <div class="work-card">
+                            <div class="work-image">
+                                <img src="https://picsum.photos/400/250?random=2" alt="项目2">
+                                <div class="work-overlay">
+                                    <h3>企业官网设计</h3>
+                                    <p>为科技公司打造的品牌网站</p>
+                                </div>
+                            </div>
+                            <div class="work-info">
+                                <h3>企业官网</h3>
+                                <p>品牌设计</p>
+                            </div>
+                        </div>
+                        <div class="work-card">
+                            <div class="work-image">
+                                <img src="https://picsum.photos/400/250?random=3" alt="项目3">
+                                <div class="work-overlay">
+                                    <h3>电商平台设计</h3>
+                                    <p>提升用户购物体验</p>
+                                </div>
+                            </div>
+                            <div class="work-info">
+                                <h3>电商平台</h3>
+                                <p>产品设计</p>
+                            </div>
+                        </div>
+                        <div class="work-card">
+                            <div class="work-image">
+                                <img src="https://picsum.photos/400/250?random=4" alt="项目4">
+                                <div class="work-overlay">
+                                    <h3>智能家居APP</h3>
+                                    <p>智能生活控制中心</p>
+                                </div>
+                            </div>
+                            <div class="work-info">
+                                <h3>智能家居</h3>
+                                <p>UI设计</p>
+                            </div>
+                        </div>
+                        <div class="work-card">
+                            <div class="work-image">
+                                <img src="https://picsum.photos/400/250?random=5" alt="项目5">
+                                <div class="work-overlay">
+                                    <h3>金融理财平台</h3>
+                                    <p>安全可靠的资产管理</p>
+                                </div>
+                            </div>
+                            <div class="work-info">
+                                <h3>金融平台</h3>
+                                <p>产品设计</p>
+                            </div>
+                        </div>
+                        <div class="work-card">
+                            <div class="work-image">
+                                <img src="https://picsum.photos/400/250?random=6" alt="项目6">
+                                <div class="work-overlay">
+                                    <h3>在线教育平台</h3>
+                                    <p>优质教育资源共享</p>
+                                </div>
+                            </div>
+                            <div class="work-info">
+                                <h3>教育平台</h3>
+                                <p>UI/UX设计</p>
+                            </div>
+                        </div>
+                        <div class="work-card">
+                            <div class="work-image">
+                                <img src="https://picsum.photos/400/250?random=7" alt="项目7">
+                                <div class="work-overlay">
+                                    <h3>医疗健康APP</h3>
+                                    <p>专业健康管理服务</p>
+                                </div>
+                            </div>
+                            <div class="work-info">
+                                <h3>健康管理</h3>
+                                <p>移动端设计</p>
+                            </div>
+                        </div>
+                        <div class="work-card">
+                            <div class="work-image">
+                                <img src="https://picsum.photos/400/250?random=8" alt="项目8">
+                                <div class="work-overlay">
+                                    <h3>旅游预订平台</h3>
+                                    <p>一站式旅行服务</p>
+                                </div>
+                            </div>
+                            <div class="work-info">
+                                <h3>旅游平台</h3>
+                                <p>Web设计</p>
+                            </div>
+                        </div>
+                        <div class="work-card">
+                            <div class="work-image">
+                                <img src="https://picsum.photos/400/250?random=9" alt="项目9">
+                                <div class="work-overlay">
+                                    <h3>音乐流媒体APP</h3>
+                                    <p>高品质音乐体验</p>
+                                </div>
+                            </div>
+                            <div class="work-info">
+                                <h3>音乐应用</h3>
+                                <p>UI设计</p>
+                            </div>
+                        </div>
+                        <div class="work-card">
+                            <div class="work-image">
+                                <img src="https://picsum.photos/400/250?random=10" alt="项目10">
+                                <div class="work-overlay">
+                                    <h3>视频会议系统</h3>
+                                    <p>高清远程协作工具</p>
+                                </div>
+                            </div>
+                            <div class="work-info">
+                                <h3>会议系统</h3>
+                                <p>产品设计</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-btn-next" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="carousel-indicators" id="carouselIndicators">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">专业技能</span>
+                <h2 class="section-title">我的能力</h2>
+            </div>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3>设计</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">UI设计</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">UX研究</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">品牌设计</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>技术</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React/Vue</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">联系我</span>
+                <h2 class="section-title">开始对话</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>期待与你合作</h3>
+                    <p>如果你有项目想法或合作意向，欢迎与我联系。</p>
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@yinxupeng.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+86 138 0000 0000</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>北京市朝阳区</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="姓名" id="name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="邮箱" id="email">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="留言" id="message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">发送消息</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#hero">YX</a>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">关于</a>
+                    <a href="#work">作品</a>
+                    <a href="#skills">技能</a>
+                    <a href="#contact">联系</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Yin Xupeng. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
