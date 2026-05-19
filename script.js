@@ -1,4 +1,20 @@
+function scrollToSection(sectionId) {
+    const targetElement = document.getElementById(sectionId);
+    if (targetElement) {
+        const navbar = document.querySelector('.navbar');
+        const navbarHeight = navbar ? navbar.offsetHeight : 80;
+        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+        
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded, script is running');
+    
     const navbar = document.querySelector('.navbar');
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
@@ -75,18 +91,21 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             
-            if (targetId === '#') return;
+            if (!targetId || targetId === '#') return;
             
-            const targetElement = document.getElementById(targetId.substring(1));
+            const targetSelector = targetId.substring(1);
+            const targetElement = document.getElementById(targetSelector);
             
             if (targetElement) {
-                const navbarHeight = navbar.offsetHeight;
+                const navbarHeight = navbar ? navbar.offsetHeight : 80;
                 const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
                 
                 window.scrollTo({
                     top: targetPosition,
                     behavior: 'smooth'
                 });
+            } else {
+                console.log('Target element not found:', targetSelector);
             }
         });
     });
